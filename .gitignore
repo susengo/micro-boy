@@ -1,0 +1,24 @@
+*.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# local env files
+.env.local
+.env.*.local
+
+# 日志
+/log/
+gva
+latest_log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+go.sum
