@@ -8,6 +8,6 @@ import (
 // 区块链全局变量
 var (
 	// FISCO BCOS
-	configsFisco      = []conf.Config{}                 // FISCO BCOS的配置信息
-	helloworldSession = &helloworld.HelloWorldSession{} // FISCO BCOS的session句柄
+	ConfigsFisco      = []conf.Config{}                 // FISCO BCOS的配置信息
+	HelloworldSession = &helloworld.HelloWorldSession{} // FISCO BCOS的session句柄
 )

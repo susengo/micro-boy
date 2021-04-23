@@ -15,5 +15,10 @@ func main() {
 		db, _ := global.GVA_DB.DB()
 		defer db.Close()
 	}
+
+	/*
+		区块链初始化
+	*/
+
 	core.RunWindowsServer()
 }
