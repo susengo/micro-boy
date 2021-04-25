@@ -1,6 +1,7 @@
 package blockchain
 
 import (
+	"fmt"
 	"github.com/FISCO-BCOS/go-sdk/client"
 	"github.com/FISCO-BCOS/go-sdk/conf"
 	"github.com/ethereum/go-ethereum/common"
@@ -50,6 +51,8 @@ func InitFiscoDeploy() {
 	global.ConfigsFisco = configFisco
 	global.GVA_LOG.Info("Helloworld contract address:", zap.Any("addressString", addressString))
 	global.GVA_LOG.Info("Helloworld transaction hash:", zap.Any("txString", txString))
+	global.GVA_LOG.Info("FISCO BCOS全局变量为:", zap.Any("FISCO Config", fmt.Sprintf("%+v", global.ConfigsFisco)))
+
 }
 
 // 实例化合约调用，传入合约调用地址
@@ -78,4 +81,5 @@ func InitFiscoSession(address string) {
 	// 将helloworldSession赋值给全局变量
 	global.HelloworldSession = helloworldSession
 	global.GVA_LOG.Info("##### 初始化智能合约Session成功 #####")
+	global.GVA_LOG.Info("FISCO BCOS session为:", zap.Any("FISCO Config", fmt.Sprintf("%+v", global.HelloworldSession)))
 }
