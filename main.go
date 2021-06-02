@@ -20,5 +20,6 @@ func main() {
 		区块链初始化
 	*/
 
+	// 初始化并启动服务监听
 	core.RunWindowsServer()
 }
